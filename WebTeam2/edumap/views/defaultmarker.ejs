@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=263963a7c1e671031e3e4902c3987a30"></script>
+    <script src="https://kit.fontawesome.com/4545b227c2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="navbar" class="navbar">
+      <button id="nav_menu" class='nav_menu' onclick='openMenu()'>
+        <i class="fas fa-bars openmenu"></i>
+      </button>
+      <h1 id="nav_title"><%= title %></h1>
+    </div>
+
+    <!--사이드바-->
+    <div id="mysideMenu" class="sideMenu">
+      <a href="#" class="closebtn" onclick='closeMenu()'>
+        <i class="fas fa-arrow-left closemenu"></i>
+      </a>
+      <a href="/">지도 띄우기</a>
+      <a href="/defaultmarker">마커 생성</a>
+      <a href="/infowindow">인포윈도우 생성</a>
+      <a href="/customover">커스텀 오버레이 생성</a>
+      <a href="/mymap">My Map</a>
+    </div>
+
+    <div id="map"></div>
+    <script type="text/javascript">
+      const mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.5642135, 127.0016985), // 지도의 중심좌표
+            level: 5 // 지도의 확대 레벨
+        };
+
+      // 지도를 표시할 div와  지도 옵션으로  지도를 생성
+      const map = new kakao.maps.Map(mapContainer, mapOption); 
+
+      // 이 스크립트 태그에는 맵만 띄우는게 좋을 것 같음
+
+    </script>
+
+    <script type="text/javascript" src="javascripts/clock.js"></script>
+    <script type="text/javascript" src="javascripts/zoom.js"></script>
+    <script type="text/javascript" src="javascripts/onclick.js"></script>
+    <script type="text/javascript" src="javascripts/marker.js"></script>
+  </body>
+</html>
