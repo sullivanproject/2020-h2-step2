@@ -1,0 +1,181 @@
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.navbar {
+  width: 100vw;
+  height: 50px;
+  background: #0B3861;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.openmenu { 
+  color: white;
+}
+
+.closemenu{
+  color: white;
+}
+
+.nav_menu{
+  margin: 10px;
+  width: 4vw;
+  height: 30px;
+  background: #0B3861;
+  align-items: left;
+  border-radius: 5px;
+  border-color: white;
+  box-shadow: none;
+}
+
+#nav_title{
+  align-items: center;
+  justify-content: center;
+}
+
+.sideMenu{
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 11000;
+  top: 0;
+  left: 0;
+  background-color: #0B243B;
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+  padding-top: 60px;
+}
+.sideMenu a {
+  margin: 15px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+.sideMenu a:hover, .offcanvas a:focus {
+  background-color: #04B45F;
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 30px !important;
+}
+.nav_menu:hover {
+  color:rgb(0,154,200);
+  transition:0.5s ease-in-out;
+}
+.nav_menu {
+  font-size: 25px;
+  cursor:pointer;
+  transition:0.5s ease-in-out;
+}
+.nav_menu > i {
+  font-size: 30px;
+}
+
+#infoBox {
+  position: absolute;
+  top: 100px;
+  z-index: 10000;
+  background: white;
+  left: 20px;
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+#levelBox {
+  position: absolute;
+  top: 200px;
+  z-index: 10000;
+  background: white;
+  left: 20px;
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+#infoTitle{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#map {
+  width: 100%;
+  height: 100vh;
+}
+
+.customoverlay {
+  position:relative;
+  bottom:85px;
+  border-radius:6px;
+  border: 1px solid #ccc;
+  border-bottom:2px solid #ddd;
+  float:left;
+  z-index: 10000;
+}
+
+/*customeroverlay class의 n번째 자식*/
+.educo:nth-of-type(n) {
+  border:0; 
+  box-shadow:0px 1px 2px #888;
+}
+
+.educo a {
+  display:block;
+  text-decoration:none;
+  color:#000;
+  text-align:center;
+  border-radius:6px;
+  font-size:14px;
+  font-weight:bold;
+  overflow:hidden;
+  background: #d95050;
+  background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+}
+
+.educo .title {
+  display:block;
+  text-align:center;
+  background:#fff;
+  margin-right:35px;
+  padding:10px 15px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.educo:after {
+  content:'';
+  position:absolute;
+  margin-left:-12px;
+  left:50%;
+  bottom:-12px;
+  width:22px;
+  height:12px;
+  background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+.myco {
+  padding: 10px;
+  position:relative;
+  border-radius:6px;
+  background-color: white;
+  border: 2px black solid;
+  float:left;
+  z-index: 10100;
+}
+
+.myco .info .title{
+  font-weight: bold;
+}
