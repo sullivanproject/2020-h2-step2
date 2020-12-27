@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>회원가입</title>
+        <link rel='stylesheet' href='style.css'/>
+        <script type="text/javascript" src="code.js"></script>
+    </head>
+
+    <body>
+        <form action="what.html" method="post">
+            <div class="form">
+                <div class="title">
+                <h2>회원가입</h2>
+            </div>
+                <div class="content">
+                    <!--id 입력-->
+                    <div>
+                        <span class="txtbox int_id">
+                        <input type="text" id="id" class="int" placeholder="아이디를 입력해주세요.">
+                        <span data-placeholder="id"></span>
+                        </span>
+                    </div>
+                    
+                    <!--pw 입력-->
+                    <div>
+                        <span class="txtbox int_pw">
+                            <input type="password" id="pw" class="int" placeholder="비밀번호를 입력해주세요.">
+                            <span data-placeholder="pw"></span>
+                        </span>
+                    </div>
+                        
+                    <!--name 입력-->
+                    <div>
+                        <span class="txtbox int_name">
+                            <input type="text" id="name" class="int" placeholder="이름을 입력해주세요.">
+                            <span data-placeholder="name"></span>
+                        </span>
+                    </div>
+                        
+                    <!--birth 입력-->
+                    <div class="birth">
+                        <!--year 입력-->
+                        <div id="year">
+                            <span class="txtbox">
+                            <input type="number" id="yy" class="int" placeholder="년(4자)">
+                            </span>
+                        </div>
+
+                        <!-- month 입력 -->
+                        <div id="month">
+                            <span class="txtbox">
+                            <select id="mm">
+                                <option>월</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                         </span>
+                        </div>
+
+                        <!-- date 입력 -->
+                        <div id="day">
+                            <span class="txtbox">
+                            <input type="number" id="dd" class="int" placeholder="일">
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!--phonenumber 입력 -->
+                    <div>
+                        <span class="txtbox int_number">
+                            <input type="number" id="number" class="int" placeholder="전화번호을 입력해주세요.">
+                            <span data-placeholder="number"></span>
+                        </span>
+                    </div>
+                    
+                    
+                    <div class="btn_area">
+                        <button type="button" id="btnJoin" onclick="checkform()">
+                            <span>가입하기</span>
+                        </button>
+                    </div>
+                    
+
+                </div>
+            
+
+             </div>
+       
+        </form>   
+</body>
+
+</html>
